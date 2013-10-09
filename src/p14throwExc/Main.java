@@ -14,11 +14,12 @@ public class Main {
     File listsDir = new File(args[1]);
     Set<String> fired = loadFired(listsDir);
     Set<String> dead = loadDead(listsDir);
-    List <Person > persons = new PersonDirectory(dir).getPersons();
+    List<Person> persons = new PersonDirectory(dir).getPersons();
     for (Person person : persons) {
       boolean isFired = fired.contains(person.getName());
       boolean isDead = dead.contains(person.getName());
-      System.out.println(person.getName() + "," + person.getAddress() + (isFired ? ", fired" : "") + (isDead ? ", dead" : ""));
+      System.out.println(person.getName() + "," + person.getAddress()
+                         + (isFired ? ", fired" : "") + (isDead ? ", dead" : ""));
     }
   }
 
