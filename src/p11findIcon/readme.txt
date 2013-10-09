@@ -1,0 +1,1 @@
+find icon for breakpoint with 'tick' mark in icons.zip
