@@ -8,9 +8,3 @@ public interface City {
   boolean isCapital();
   boolean isThePerfectPlace();
 }
-
-class X {
-  void m(City c) {
-    boolean capital = c.isCapital();
-  }
-}
