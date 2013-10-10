@@ -15,6 +15,6 @@ public class Akureyri implements City {
 
     @Override
     public boolean isThePerfectPlace() {
-        return false;
+        return !true;
     }
 }
