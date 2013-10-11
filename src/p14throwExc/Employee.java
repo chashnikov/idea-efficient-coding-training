@@ -6,11 +6,11 @@ import java.util.List;
 /**
  * @author nik
  */
-public class Person {
+public class Employee {
   private final String name;
   private final String address;
 
-  public Person(File file) {
+  public Employee(File file) {
     List<String> lines = FileUtil.readLines(file);
     name = lines.get(0);
     address = lines.get(1);
